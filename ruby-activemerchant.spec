@@ -1,4 +1,5 @@
-Summary:	Ruby library for dealing with Creditcards, Payments  and shipping.
+Summary:	Ruby library for dealing with Creditcards, Payments  and shipping
+Summary(pl.UTF-8)	Biblioteka języka Ruby do obsługi kart kredytowych, płatności i wysyłek
 Name:		ruby-ActiveMerchant
 %define tarname activemerchant
 Version:	1.0.3
@@ -19,6 +20,12 @@ Active Merchant is an extraction from the e-commerce system Shopify.
 Shopify's requirements for a simple and unified API to access dozens of
 different payment gateways with very different internal APIs was the chief
 principle in designing the library.
+
+%description -l pl.UTF-8
+Active Merchant pochodzi z systemu e-commerce o nazwie Shopify. Zaspokojenie
+potrzeb Shopify na zunifikowane API dostępu do dziesiątek różnych bramek
+płatności z różnymi natywnymi interfejsami było główną zasadą, jaką kierowali
+się projektanci tej biblioteki.
 
 %prep
 %setup -q -n %{tarname}-%{version}
