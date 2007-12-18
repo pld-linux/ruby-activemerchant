@@ -1,5 +1,5 @@
 Summary:	Ruby library for dealing with Creditcards, Payments  and shipping
-Summary(pl.UTF-8)	Biblioteka języka Ruby do obsługi kart kredytowych, płatności i wysyłek
+Summary(pl.UTF-8):	Biblioteka języka Ruby do obsługi kart kredytowych, płatności i wysyłek
 Name:		ruby-ActiveMerchant
 %define tarname activemerchant
 Version:	1.0.3
