@@ -8,6 +8,7 @@ License:	Ruby-alike
 Group:		Development/Languages
 Source0:	http://rubyforge.org/frs/download.php/17865/%{tarname}-%{version}.tgz
 # Source0-md5:	fa6ae6d8f551974eb4676d346dfe13a1
+Patch0:		%{name}-paths.patch
 URL:		http://www.activemerchant.org/
 BuildRequires:	rpmbuild(macros) >= 1.277
 BuildRequires:	ruby-modules
@@ -29,6 +30,7 @@ zasadą, jaką kierowali się projektanci tej biblioteki.
 
 %prep
 %setup -q -n %{tarname}-%{version}
+%patch0 -p1
 
 %build
 #rdoc --ri --op ri lib
