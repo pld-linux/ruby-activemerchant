@@ -1,0 +1,12 @@
+diff -Nur activemerchant-1.0.3.orig/lib/active_merchant.rb activemerchant-1.0.3.paths/lib/active_merchant.rb
+--- activemerchant-1.0.3.orig/lib/active_merchant.rb	2007-02-25 19:38:52.000000000 -0700
++++ activemerchant-1.0.3.paths/lib/active_merchant.rb	2008-09-17 20:00:08.000000000 -0600
+@@ -21,8 +21,6 @@
+ # WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+ #++
+                     
+-$:.unshift(File.dirname(__FILE__))      
+-
+ # Include rails' active support for all the core extensions we love
+ begin
+   require 'active_support'
