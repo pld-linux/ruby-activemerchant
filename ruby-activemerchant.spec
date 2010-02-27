@@ -1,18 +1,19 @@
+%define pkgname activemerchant
 Summary:	Ruby library for dealing with Creditcards, Payments  and shipping
 Summary(pl.UTF-8):	Biblioteka języka Ruby do obsługi kart kredytowych, płatności i wysyłek
-Name:		ruby-ActiveMerchant
-%define tarname activemerchant
+Name:		ruby-activemerchant
 Version:	1.0.3
 Release:	1
 License:	Ruby-alike
 Group:		Development/Languages
-Source0:	http://rubyforge.org/frs/download.php/17865/%{tarname}-%{version}.tgz
+Source0:	http://rubyforge.org/frs/download.php/17865/%{pkgname}-%{version}.tgz
 # Source0-md5:	fa6ae6d8f551974eb4676d346dfe13a1
 Patch0:		%{name}-paths.patch
 URL:		http://www.activemerchant.org/
 BuildRequires:	rpmbuild(macros) >= 1.277
 BuildRequires:	ruby-modules
 %{?ruby_mod_ver_requires_eq}
+Obsoletes:	ruby-ActiveMerchant
 #BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -29,7 +30,7 @@ różnych bramek płatności z różnymi natywnymi interfejsami było główną
 zasadą, jaką kierowali się projektanci tej biblioteki.
 
 %prep
-%setup -q -n %{tarname}-%{version}
+%setup -q -n %{pkgname}-%{version}
 %patch0 -p1
 
 %build
